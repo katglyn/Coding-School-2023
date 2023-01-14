@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
+
 // 1. Write a C# program to print Hello and your name in the same line
 
 
@@ -10,6 +12,8 @@ internal class Program {
     private static void Main(string[] args)
     {
 
+        // 1. Write a C# program to print Hello and your name in the same line
+
         string a = "Hello";
         string b = "Katerina";
 
@@ -19,7 +23,7 @@ internal class Program {
 
 
 
-        //  Write a C# program to print the sum of two numbers and the division
+        // 2.  Write a C# program to print the sum of two numbers and the division
         //of those two numbers.
 
         // my 2 numbers
@@ -35,18 +39,19 @@ internal class Program {
 
         Console.ReadLine();
 
-        // Write a C# program to print the result of the specified operations:
+        // 3. Write a C# program to print the result of the specified operations:
 
 
 
-        //  Write a C# program that assigns an age...
+        // 4. Write a C# program that assigns an age...
 
         int age = 33;
         string gender = "Apachi Helicopter";
         Console.WriteLine("You are an " + gender + "and look younger than " + age);
         Console.ReadLine();
 
-        //  Write a C# program that takes an integer representing seconds
+        // 5.  Write a C# program that takes an integer representing seconds
+
         Console.WriteLine("Enter number of seconds:");
         int sec = 0;
         // Check if user input correct integer
@@ -65,7 +70,9 @@ internal class Program {
         Console.WriteLine($"years= {years} , days= {days}, months= {months} , hours= {hours}, minutes={minutes}");
         Console.ReadLine();
 
-        // temp
+        // 6. 
+
+        // 7. Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit
 
         Console.Write("Enter the amount of Celsius: ");
         int celsius = Convert.ToInt32(Console.ReadLine());
@@ -73,6 +80,8 @@ internal class Program {
         Console.WriteLine("Kelvin = {0}", celsius + 273);
         Console.WriteLine("Fahrenheit = {0}", celsius * 18 / 10 + 32);
         Console.ReadLine();
+
+
     }
 
 
