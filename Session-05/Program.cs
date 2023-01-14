@@ -35,40 +35,57 @@ class SessionFive
         Console.ReadLine();
 
 
-        // Write a C# program that asks the user for an integer (n) and gives them
-        // the possibility to choose between computing the sum and computing the product of 1..n
 
 
-        Console.Write("Input  a number(integer): ");
-        int n = Convert.ToInt32(Console.ReadLine());
-        int sum = 0;
-        while (n != 0)
+        int num, i, ctr, stno, enno;
+
+        Console.Write("\n\n");
+        Console.Write("Find the prime numbers within a range of numbers:\n");
+        Console.Write("---------------------------------------------------");
+        Console.Write("\n\n");
+
+        Console.Write("Input starting number of range: ");
+        stno = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Input ending number of range : ");
+        enno = Convert.ToInt32(Console.ReadLine());
+        Console.Write("The prime numbers between {0} and {1} are : \n", stno, enno);
+
+        for (num = stno; num <= enno; num++)
         {
-            sum += n % 10;
-            n /= 10;
+            ctr = 0;
+
+            for (i = 2; i <= num / 2; i++)
+            {
+                if (num % i == 0)
+                {
+                    ctr++;
+                    break;
+                }
+            }
+
+            if (ctr == 0 && num != 1)
+                Console.Write("{0} ", num);
         }
-        Console.WriteLine("Sum of the digits of the said integer: " + sum);
-        Console.ReadLine();
+        Console.Write("\n");
+        Console.ReadLine() ;
 
 
-        int num, product = 1;
 
-        // Reading number
-        Console.Write("Enter any number: ");
-        num = Convert.ToInt32(Console.ReadLine());
 
-        // Repeat the steps till n becomes 0
-        while (num != 0)
-        {
-            product = product * (num % 10);
 
-            // Remove the last digit from n
-            num = num / 10;
-        }
 
-        Console.WriteLine("Product of digits = " + product);
 
-        Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
 
     }
  }
