@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: rgb(56, 59, 60);
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+header {
+  display: flex;
+  background-color: rgb(241, 246, 245);
+}
+
+header a {
+  margin-right: auto;
+  padding: 15px;
+}
+
+header a img {
+  height: 90px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+li, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(2, 192, 154);
+}
+
+.content {
+  width: 1150px;
+  margin: auto;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main {
+  flex: 3;
+}
+
+.article-img, .side {
+  flex: 2;
+}
+
+.article-img img {
+  width: 100%;
+  height: auto;
+}
+
+.form-item * {
+  display: block;
+  margin: 7px 0;
+}
+
+#name, #comment {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#name {
+  height: 30px;
+}
+
+#comment {
+  height: 60px;
+}
+
+button {
+  padding: 6px 15px;
+  color: white;
+  background-color: rgb(2, 184, 148);
+  border: none;
+  border-radius: 8px;
+  font-size: larger;
+}
+
+.side-links {
+  padding: 0;
+}
+
+.side-links li {
+  padding-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+@media (max-width: 700px) {
+  header {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  header * { 
+      margin: auto;
+  }
+
+  .nav {
+      flex-wrap: wrap;
+      padding: 0;
+  }
+
+  .content {
+      width: 90%;      
+  }
+
+  .article {
+      flex-direction: column;
+  }
+}
